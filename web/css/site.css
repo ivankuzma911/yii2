@@ -1,0 +1,615 @@
+html,
+body {
+    height: 100%;
+    font-family: arial;
+    color:white;
+    background-color: black;
+    min-width: 800px;
+    min-height: 500px;
+
+}
+
+.navbar{
+    background-color: inherit;
+    border:none;
+}
+
+.navbar-header .navbar-brand, .navbar-brand:hover{
+    background: -webkit-linear-gradient(#4e1200,#5f1400, #781800);
+    background: -o-linear-gradient(#4e1200,#5f1400, #781800);
+    background: -moz-linear-gradient(#4e1200,#5f1400, #781800);
+    background: linear-gradient(#4e1200,#5f1400, #781800);
+    width: 215px;
+    height: 100px;
+    border-radius: 0 0 20px 20px;
+    padding: 25px 0 0 15px;
+    letter-spacing: 5px;
+    font-size: 14px;
+    color: white;
+}
+
+.navbar-brand img{
+    display: inline;
+    margin-bottom: 15px;
+    margin-left: 0;
+}
+
+.nav{
+    position: relative;
+    float: right;
+    top: 70px;
+}
+
+.nav img{
+    height: 20px;
+    width: 20px;
+}
+
+.navbar-fixed-top {
+    position: relative;
+    top: 0;
+    border-width: 0 0 1px;
+}
+
+.container .nav li{
+    padding: 0;
+    margin-left: 40px;
+}
+
+.container .nav li a{
+    text-align: center;
+    padding: 5px 20px;
+    color:white;
+}
+
+
+#nav-home,#nav-login,#nav-registration,#nav-event{
+    display: block;
+    background: -webkit-linear-gradient(#4e4e4e, #111111);
+    background: -o-linear-gradient(#4e4e4e, #111111);
+    background: -moz-linear-gradient(#4e4e4e, #111111);
+    background: linear-gradient(#4e4e4e, #111111);
+    border-radius: 10px 10px 10px 10px;
+    border: none;
+}
+.wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -60px;
+    padding: 0 0 60px;
+}
+
+.wrap > .container {
+    padding: 70px 15px 20px;
+}
+
+.footer {
+    height: 60px;
+    color:white;
+    padding-top: 20px;
+    text-align: center;
+}
+
+/* login & registration */
+#login-form {
+    position: absolute;
+    width: 500px;
+    height: 350px;
+    left: 50%;
+    top: 50%;
+    margin-left: -250px;
+    margin-top: -175px;
+    background: -webkit-linear-gradient(#080808,#191919, #080808); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#080808,#191919, #080808); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#080808,#191919, #080808); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#080808,#191919, #080808); /* Standard syntax */
+    border-radius: 20px 20px 20px 20px;
+    padding-left: 50px;
+}
+
+#login-form h4{
+    margin-bottom: 40px;
+    font-weight: 200;
+}
+
+#login-form .form-control{
+    display: inline-block;
+    width: 300px;
+    color:black;
+}
+
+#login-form .control-label{
+    width: 100px;
+    color:white;
+    font-weight: normal;
+}
+
+#login-form a{
+    margin-left: 105px;
+    text-decoration: underline;
+    color:white;
+    font-size: 15px;
+}
+
+#login-form button{
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+    background: -webkit-linear-gradient(#4e4e4e, #111111);
+    background: -o-linear-gradient(#4e4e4e, #111111);
+    background: -moz-linear-gradient(#4e4e4e, #111111);
+    background: linear-gradient(#4e4e4e, #111111);
+    border-radius: 10px 10px 10px 10px;
+    border: none;
+    padding: 3px 20px 3px 20px;
+}
+
+#login-form .form-group:last-child{
+    position: relative;
+    top: 50px;
+    right: 25px;
+}
+
+#login-form button img{
+    margin-right: 10px;
+}
+
+/* view */
+.records-view {
+    margin: 0 auto;
+    width: 400px;
+    height: 600px;
+    background: -webkit-linear-gradient(#080808,#191919, #080808);
+    background: -o-linear-gradient(#080808,#191919, #080808);
+    background: -moz-linear-gradient(#080808,#191919, #080808);
+    background: linear-gradient(#080808,#191919, #080808);
+    border-radius: 20px 20px 20px 20px;
+    padding-left: 50px;
+}
+
+.records-view td{
+    height: 30px;
+}
+
+.records-view th{
+    width: 150px;
+}
+
+.records-view > span{
+    display: block;
+    margin-bottom: 25px;
+    margin-top: 10px;
+}
+
+/* update & create */
+.records-create {
+    margin: 0 auto;
+    width: 500px;
+    height: 700px;
+    background: -webkit-linear-gradient(#080808,#191919, #080808);
+    background: -o-linear-gradient(#080808,#191919, #080808);
+    background: -moz-linear-gradient(#080808,#191919, #080808);
+    background: linear-gradient(#080808,#191919, #080808);
+    border-radius: 20px 20px 20px 20px;
+    padding-left: 50px;
+}
+
+.records-create .form-control{
+    width: 300px;
+    height: 30px;
+    display: inline-block;
+}
+
+.records-create input[type="radio"]{
+    float:left;
+    margin-left: -15px;
+    margin-top: 10px;
+}
+
+.records-create .control-label{
+    width: 100px;
+    font-weight: normal;
+    font-size:14px;
+}
+
+.records-create > span{
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.records-create .field-records-day > label{
+    float:left;
+}
+
+#records-day, #records-month, #records-year{
+    width: 90px;
+    float:left;
+}
+
+.records-create .form-group:last-child{
+    clear: both;
+}
+
+.records-create .update-button,.create-button{
+    display: block;
+    width: 100px;
+    margin: 0 auto;
+    background: -webkit-linear-gradient(#4e4e4e, #111111);
+    background: -o-linear-gradient(#4e4e4e, #111111);
+    background: -moz-linear-gradient(#4e4e4e, #111111);
+    background: linear-gradient(#4e4e4e, #111111);
+    border-radius: 10px 10px 10px 10px;
+    border: none;
+    padding: 3px 20px 3px 20px;
+    position: relative;
+    top: 30px;
+}
+
+.records-create div select{
+    margin-right: 10px;
+    border: none;
+}
+
+/* index */
+
+.empty{
+    text-align: center;
+    font-size: 20px;
+}
+
+.emptyButton, .emptyButton:hover {
+    background: -webkit-linear-gradient(#4e4e4e, #111111);
+    background: -o-linear-gradient(#4e4e4e, #111111);
+    background: -moz-linear-gradient(#4e4e4e, #111111);
+    background: linear-gradient(#4e4e4e, #111111);
+    border-radius: 10px 10px 10px 10px;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: white;
+    margin: 0 auto;
+    display: block;
+    width: 50px;
+    text-align: center;
+    font-size: 15px;
+}
+
+#table .table-bordered > thead > tr > th,
+#table .table-bordered > tbody > tr > th,
+#table .table-bordered > tfoot > tr > th,
+.table-bordered > thead > tr > td,
+#table .table-bordered > tfoot > tr > td {
+    border: 0;
+    font-weight:normal;
+}
+
+#table .table-bordered > tbody > tr > td{
+    border-width: 0 0 1px 0;
+    border-bottom-color: #696969 ;
+}
+
+.records-index {
+    min-width: 500px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 50%;
+    height: 30%;
+    margin: auto;
+}
+
+.records-index thead tr, th > a , th >a:hover{
+    background: #414141;
+    color:#bfbfbf;
+}
+
+
+.records-index thead tr th:first-child{
+    border-radius: 20px 0 0 0;
+}
+
+.records-index thead tr th:last-child{
+    border-radius:0 20px 0 0;
+}
+
+.records-index table{
+    border:0;
+}
+
+.records-index table tbody{
+    background-color: #303030;
+}
+
+.records-index #table .table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: inherit;
+}
+
+.records-index #table .table-footer td{
+    border-bottom-width: 0;
+    background: -webkit-linear-gradient(#303030, #111111); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#303030, #111111); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#303030, #111111); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#303030, #111111); /* Standard syntax */
+}
+
+.records-index #table .table tbody tr:last-child td{
+    border-bottom-width: 0;
+}
+
+.records-index .table-footer td:first-child{
+    border-bottom-left-radius: 20px;
+}
+
+.records-index .table-footer td:last-child{
+    border-bottom-right-radius: 20px;
+}
+
+.records-index #table .add_button{
+    display: none;
+}
+
+.records-index #table tbody tr:last-child .add_button{
+    display: inline-block;
+}
+
+.records-index #table tbody .delete_button{
+    display: none;
+}
+
+.records-index .actions_header{
+    width: 125px;
+}
+
+.records-index #table tbody tr:hover .delete_button{
+    display: inline-block;
+    margin-left: -6px;
+}
+
+.records-index #table tbody tr:last-child .update_button{
+    display: none;
+}
+
+.records-index #table tbody tr .action_td{
+    float: right;
+    min-width: 125px;
+    margin-right: -55px;
+}
+
+.records-index #table .view_button,.view_button:hover{
+    padding: 2px;
+    font-size: 12px;
+    background: -webkit-linear-gradient(#c36e00, #a24d00);
+    background: -o-linear-gradient(#c36e00, #a24d00);
+    background: -moz-linear-gradient(#c36e00, #a24d00);
+    background: linear-gradient(#c36e00, #a24d00);
+    text-decoration: none;
+    color: white;
+    border-radius: 10px 0 0 10px;
+}
+
+.records-index #table .update_button,.update_button:hover{
+    background: -webkit-linear-gradient(#c36e00, #a24d00); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#c36e00, #a24d00); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#c36e00, #a24d00); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#c36e00, #a24d00); /* Standard syntax */
+    text-decoration: none;
+    color:white;
+    border-radius:  10px 10px 10px 10px;
+    padding: 2px 11px;
+    font-size: 12px;
+
+}
+
+.records-index #table .add_button,.add_button:hover{
+    font-size: 12px;
+    background: -webkit-linear-gradient(#c36e00, #a24d00);
+    background: -o-linear-gradient(#c36e00, #a24d00);
+    background: -moz-linear-gradient(#c36e00, #a24d00);
+    background: linear-gradient(#c36e00, #a24d00);
+    text-decoration: none;
+    color: white;
+    border-radius: 10px 10px 10px 10px;
+    padding: 1px 10px 0 11px;
+}
+
+.records-index .pagination{
+    margin: 0 auto;
+    float: none;
+    display: table;
+
+}
+
+#table .pagination{
+    margin: 0 auto;
+    float: none;
+    display: table;
+}
+
+#table .pagination .first-page a{
+    background-color: #6e1700;
+    border:none;
+    border-radius: 0 0 0 20px;
+    width: 100px;
+}
+
+.pagination .first-page img{
+    width: 20px;
+    height: 20px;
+    margin:0
+}
+
+.pagination .last-page img{
+    width: 20px;
+    height: 20px;
+    margin: 0;
+}
+
+
+#table .pagination .last-page a{
+    background-color: #6e1700;
+    border:none;
+    border-radius: 0 0 20px 0;
+    width: 100px;
+}
+
+#table .pagination .prev a{
+    background-color: #6e1700;
+    border:none;
+    width: 64px;
+    height: 33px;
+}
+
+#table .pagination .next a{
+    background-color: #6e1700;
+    border:none;
+    width: 64px;
+    height: 33px;
+}
+
+#table .pagination .active a{
+    color:white;
+    font-size: 14px;
+    line-height: 1;
+}
+
+
+
+#table .pagination .last-page  span{
+    background-color: #6e1700;
+    border:none;
+    width: 100px;
+    border-radius: 0 0 20px 0;
+    height: 33px;
+}
+
+#table .pagination .first-page  span{
+    background-color: #6e1700;
+    border:none;
+    width: 100px;
+    border-radius: 0 0 0 20px;
+    height: 33px;
+}
+
+#table .pagination .next  span{
+    background-color: #6e1700;
+    border:none;
+    width: 64px;
+    height: 33px;
+}
+
+#table .pagination .prev  span{
+    background-color: #6e1700;
+    border:none;
+    width: 64px;
+    height: 33px;
+}
+
+#table .pagination .prev  span img, a img{
+    margin-right: 2px;
+}
+
+#table .pagination .next  span img, a img{
+    margin-left: 2px;
+}
+
+#table .pagination li a{
+    background-color: #6e1700;
+    border:none;
+    height: 33px;
+    color:#b3b3b3;
+}
+
+.table{
+    margin: 0;
+}
+
+.event_submit, .event_submit:hover{
+    background: -webkit-linear-gradient(#4e4e4e, #111111);
+    background: -o-linear-gradient(#4e4e4e, #111111);
+    background: -moz-linear-gradient(#4e4e4e, #111111);
+    background: linear-gradient(#4e4e4e, #111111);
+    border-radius: 10px 10px 10px 10px;
+    border: none;
+    padding: 3px 20px 3px 20px;
+    margin: 0 auto;
+    width: 75px;
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+#check-all{
+    cursor: pointer;
+}
+
+
+/* emails */
+
+.emails-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    background: -webkit-linear-gradient(#080808,#191919, #080808);
+    background: -o-linear-gradient(#080808,#191919, #080808);
+    background: -moz-linear-gradient(#080808,#191919, #080808);
+    background: linear-gradient(#080808,#191919, #080808);
+    border-radius: 20px 20px 20px 20px;
+    height: 300px;
+    margin-left: -250px;
+    margin-top: -150px;
+    padding: 30px;
+}
+
+.emails-content input[type="text"],textarea{
+    color:black;
+}
+
+#area-label{
+    display: block;
+}
+
+.emails-content textarea{
+    width: 400px;
+    height: 150px;
+}
+
+.emails-content .emails-link{
+    background: -webkit-linear-gradient(#4e4e4e, #111111);
+    background: -o-linear-gradient(#4e4e4e, #111111);
+    background: -moz-linear-gradient(#4e4e4e, #111111);
+    background: linear-gradient(#4e4e4e, #111111);
+    border-radius: 10px 10px 10px 10px;
+    border: none;
+    padding: 3px 20px 3px 20px;
+    text-decoration: none;
+    color: white;
+    margin-left: 30px;
+}
+
+.emails-content input[name="emails"]{
+    width: 220px;
+}
+
+#emails-submit{
+    background: -webkit-linear-gradient(#4e4e4e, #111111);
+    background: -o-linear-gradient(#4e4e4e, #111111);
+    background: -moz-linear-gradient(#4e4e4e, #111111);
+    background: linear-gradient(#4e4e4e, #111111);
+    border-radius: 10px 10px 10px 10px;
+    border: none;
+    padding: 3px 20px 3px 20px;
+    margin: 0 auto;
+    display: block;
+}
+
+
+
+
+
+
+
+
